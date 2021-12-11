@@ -1,46 +1,330 @@
-body{
+*{
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
+
+
+/* background image */
 #body-header{
     height: 65vh;
-    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
+    background-image: url(https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-size: 100vw 75vh;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    opacity: 1;
 }
 
-#body-header ul li{
-    margin-top: 30px;
-}
 
-.text-center{
+
+/* Nav bar */
+.text-align{
     text-align: center;
-}
-
-.horizontal-list li {
-    display: inline-block;
-    margin: 0px 10px 10px 0px;
     list-style: none;
 }
-
-.horizontal-list li a {
-    color: white;
+#navigation{
+    padding-top: 30px;
+}
+#navigation li{
+    display: inline;
+}
+#navigation li a{
     text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    color: black;
+}
+#navigation li a:hover{
+    color: rgb(100, 100, 100);
+    border-bottom: 1px solid rgb(100, 100, 100);
 }
 
-.horizontal-list li a:hover {
-    color: lightgray;
-}
 
-#social li a {
-    font-size: small;
-}
 
+/* name */
 #name{
-    padding-top: 150px;
-    font-size: 100px;
-    font-style: inherit;
+    padding-top: 200px;
+    color: black;
+    font-weight: bolder;
+    font-size: 60px;
+    padding-left: 35px;
+}
+
+
+
+/* social */
+#socials{
+    padding-top: 42px;
+}
+#socials li{
+    display: inline;
+}
+#socials li a{
+    color: black;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: 30px ;
+    text-decoration: none;
+    border-radius: 100px;
+}
+#socials li a:hover{
+    box-shadow: 0px 0px 6px 4px rgb(100, 100, 100);
+}
+
+
+
+/* About */
+#img img{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    margin-left: 44vw;
+    margin-top: -11vh;
+    position: relative;   
+    border: 3px solid white;
+}
+#w1{
+    font-size: 20px;
+    margin-top: 15px;
+    height: 145px;
+    padding: 0px 10vw 0px 10vw;
+}
+section:nth-child(2n){
+    background-color: #f3f3f3;
+    height: 50vh;
+}
+section:nth-child(2n+1){
+    height: 50vh;
+}
+
+
+
+/* Skills */
+.heading{
+    text-align: center;
+    color: black;
+    font-size: 33px;
+    padding-top: 20px;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#skl{
+    margin: 44px;
+    height: 70%;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.s{
+    box-shadow: lightgray;
+    margin: 20px;
+    width: 275px;
+    height: 46px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(to right,orange 80%,#ffc14f 20%);
+}
+#C{
+    background-image: linear-gradient(to right,orange 60%,#ffc14f 20%);
+}
+#HTML{
+    background-image: linear-gradient(to right,blue 90%,cornflowerblue 20%);
+}
+#CSS{
+    background-image: linear-gradient(to right,blue 75%,cornflowerblue 20%);
+}
+#Python{
+    background-image: linear-gradient(to right,lime 50%,#1ae6b7 20%);
+}
+#Dart{
+    background-image: linear-gradient(to right,lime 70%,#1ae6b7 20%);
+}
+#Java{
+    background-image: linear-gradient(to right,lime 30%,#1ae6b7 20%);
+}
+
+
+
+/* experience */
+#experience{
+    height: 50vh;
+
+}
+
+
+
+/* education */
+#education{
+    height: 90vh;
+}
+#edu{
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 2%;
+    width: 75%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    color: rgb(83, 78, 78);
+}
+.Esiz{
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 65vh;
+    width: 40%;
+    position: relative;
+    text-align: justify;
+}
+.Esiz span{
+    text-align: top right;
+    font-size: 30px;
+    color: royalblue;
+}
+.Esiz h3{
+    text-align: right;
+    font-size: 20px;
+    color: sandybrown;
+}
+.Esiz h4{
+    text-align: right;
+    font-size: 15px;
+}
+.Esiz p{
+    font-size: 18px;
+}
+.Esiz:nth-child(2n){
+    margin-left: 55%;
+}
+.Esiz:nth-child(2n+1){
+    margin-right: 55%;
+}
+
+
+
+/* portfolio */
+#portfolio{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#project{
+    margin-bottom: 50px 30px 5px 30px;
+    height: 90%;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pro a img{
+    width: 16vw;
+    height: 25vh;  
+    margin: 25px 10px 10px 10px;
+}
+.pro a img:hover{
+    color: black;
+    opacity: 0.8;
+}
+
+
+
+/* contact */
+#contact{
+    height: 75vh;
+    background-color: black;
+}
+.cheading{
+    text-align: center;
     color: white;
+    font-size: 45px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+#Form label{
+    display: block;
+}
+input,textarea{
+    width: 98%;
+    height: 25px;
+    background-color: black;
+    border-bottom: 8px bold white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+}
+textarea{
+    height: 90px;
+}
+#btn{
+    display: block;
+    position: right;
+    width: 20%;
+    height: 30px;
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 78%;
+}
+#btn:hover{
+    background-color: grey;
+}
+#info{
+    display: flex;
+    height: 45vh;
+    margin-left: 60px;
+    margin-right: 70px;
+    justify-content: space-between;
+}
+.cbox{
+    margin: 30px;
+    width: 40vw;
+}
+#msg{
+    margin-left: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+#adrs{
+    margin-right: 50px;
+    color: white;
+}
+#adrs h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#adrs p{
+    font-size: 20px;
+}
+#csocials{
+    padding-top: 42px;
+}
+#csocials li{
+    display: inline;
+}
+#csocials li a{
+    color: white;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-size: 30px ;
+    text-decoration: none;
+    border-radius: 100px;
+}
+ #csocials li a:hover{
+    box-shadow: 0px 0px 6px 4px rgb(100, 100, 100);
 }
